@@ -1,1 +1,1 @@
-# ChatGPT-based-contrastive-learning-CCL-
+# ChatGPT-based-contrastive-learning-CCL
