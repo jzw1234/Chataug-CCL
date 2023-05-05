@@ -38,14 +38,13 @@ python preprocess/preprocess.py --model_name  t5 --dataset rsum
 We have provided the training scripts for each dataset we used in this paper, and you can easily start the training process with them:
 
 ```
-#If there is no warmed-up checkpoint, you should use `--warmup True` to train the generation model with NLLLoss 
 python run_rsum.py --mode train --gpus 0 --warmup True --model_name t5
 ```
 
 the warmed-up checkpoint will be saved to `./pretrained_weigths/rsum/t5(or pegasus)` by default.  
 Please notice that huggingface also provides many finetuned checkpoints.
 
-```
+
 
 After completing the training process,  several best checkpoints will be stored in a folder named after the training start time by default, for example, `checkpoints/rsum/t5/2022-10-05-10-37-24-196200`
 
